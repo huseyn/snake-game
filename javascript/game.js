@@ -1,7 +1,7 @@
 import {
   SNAKE_SPEED,
   update as updateSnake,
-  draw as drawAsSnake,
+  draw as drawSnake,
 } from "./snake.js";
 import { update as updateFood, draw as drawFood } from "./food.js";
 
@@ -29,6 +29,6 @@ function update() {
 
 function draw() {
   gameBoard.innerHTML = "";
-  drawAsSnake(gameBoard);
+  drawSnake(gameBoard);
   drawFood(gameBoard);
 }
